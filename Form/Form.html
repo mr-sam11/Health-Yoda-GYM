@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login | Health Yoda</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <div id="header">
+        <label id="hd">Health Yoda</label>
+        <a id="login" href="Form.html"><img src="Login.png"></a>
+    </div>
+
+    <div id="space"></div>
+    <h1 align="center">Login</h1>
+    <div id="container" align="center"></div>
+    <div id="Logindiv">
+        <form>
+            <label>Username:</label>
+            <input type="text" name="username">
+            <br>
+            <label>Passsword:</label>
+            <input type="password" name="pwd">
+            <br>
+            <BUTTON class="btn" name="LogSubmit">Login</BUTTON>
+            <button class="btn" id="register" onclick="switchForm()">Register</button>
+        </form>
+    </div>
+    <div id="registerdiv" align="center">
+        <form action="Mark3.php" method="post">
+            <label>First Name</label>
+            <br>
+            <input id="abc" type="text" name="fname">
+            <br>
+            <label>Last Name</label>
+            <br>
+            <input type="text" name="lname">
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" name="email">
+            <br>
+            <label>D.O.B</label>
+            <br>
+            <input type="date" name="dob">
+            <br>
+            <label>Password</label>
+            <br>
+            <input type="password" name="pwd">
+            <br>
+            <label>Confirm Password</label>
+            <br>
+            <input type="password" name="cpwd">
+            <br>
+            <label>Phone</label>
+            <br>
+            <input type="tel" name="phn">
+            <br>
+            <label>Upload Photo</label>
+            <br>
+            <input type="file" name="file" accept=".png,.gif,.jpg,.webp" class="inputfile">
+            <br>
+            <input class="btn" type="submit">
+            <input class="btn" type="reset">
+            <br>
+            <label class="Loginpage" onclick="LoginPage()">Already have a account</label>
+        </form>
+        <script type="text/javascript" language="JavaScript">
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("header").style.fontSize = "30px";
+                    document.getElementById("login").style.width = "50px";
+                } else {
+                    document.getElementById("header").style.fontSize = "90px";
+                    document.getElementById("login").style.width = "100px";
+                }
+            }
+            document.getElementById("container").innerHTML = document.getElementById("Logindiv").innerHTML;
+
+            function switchForm() {
+                document.getElementById("container").innerHTML = document.getElementById("registerdiv").innerHTML;
+            }
+
+            function LoginPage() {
+                document.getElementById("container").innerHTML = document.getElementById("Logindiv").innerHTML;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
