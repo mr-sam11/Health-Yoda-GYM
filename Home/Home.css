@@ -17,7 +17,6 @@
     /* Full width */
     transition: 0.3s;
     /* Add a transition effect (when scrolling - and font size is decreased) */
-    background: url("Logo.png") no-repeat;
     background-size: auto 100%;
     background-color: #1b1b1b;
 }
@@ -36,6 +35,20 @@
     right: 5%;
     width: 100px;
     transition: 0.3s;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#logo {
+    left: 5%;
+    width: 150px;
+    transition: 0.3s;
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
 }
 
 #container {
@@ -101,12 +114,6 @@ h2 {
     text-align: center;
 }
 
-#login {
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-}
 
 #end {
     text-align: center;

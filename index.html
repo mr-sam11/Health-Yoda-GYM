@@ -10,6 +10,7 @@
 
 <body>
     <div id="header">
+        <a id="logo" href="index.html"><img src="Home/Logo.png"></a>
         <label id="hd">Health Yoda</label>
         <a id="login" href="Form/Form.html"><img src="Home/Login.png"></a>
     </div>
@@ -98,11 +99,13 @@
 
         function scrollFunction() {
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.fontSize = "30px";
+                document.getElementById("header").style.fontSize = "60px";
                 document.getElementById("login").style.width = "50px";
+                document.getElementById("logo").style.width = "100px";
             } else {
                 document.getElementById("header").style.fontSize = "90px";
                 document.getElementById("login").style.width = "100px";
+                document.getElementById("logo").style.width = "150px";
             }
         }
     </script>
